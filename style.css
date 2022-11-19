@@ -1,0 +1,53 @@
+:root {
+    --primary: #0016ff;
+    --background: #fff;
+    --hover: #d5d5d5;
+}
+
+[data-theme='dark'] {
+    --primary: #fff;
+    --background: #181818;
+    --hover: #1f1f1f;
+}
+
+body {
+    margin: 0;
+    color: var(--primary);
+    background: var(--background);
+    font-family: sans-serif;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    position: fixed;
+    top: 20px;
+    transition: 200ms linear;
+    cursor: pointer;
+    width: 40px;
+}
+
+.switch:active {
+    transform: translate(0px, -4px);
+}
+
+.svg {
+    color: var(--primary);
+    border-radius: 50px;
+    padding: 8px;
+    transition: 20ms linear;
+}
+
+.svg:hover {
+    background: var(--hover);
+}
+
+#light {
+    display: none;
+}
